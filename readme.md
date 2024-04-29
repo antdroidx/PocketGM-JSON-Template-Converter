@@ -8,7 +8,9 @@ Step 3. Copy and paste the CSV data into the INPUT tab
 
 Step 4. Go to the Convert Tab, and Copy and paste (as text!) everything from Column A to Column BL into the PGM Master Template spreadsheet. Copy it into the INPUT tab there!
 
-Step 5. The potential value is not copied over. This requires some user input. I recommend using the following formula:=IFERROR(INT(IF(E6<27,RANDBETWEEN(0,((224-W6)/4)^0.8/(27-E6))+RANDBETWEEN(0,(V6-2018)),0)),0)
+Step 5. The potential value is not copied over. This requires some user input. I recommend using the following formula:
+
+=IFERROR(INT(IF(E6<27,RANDBETWEEN(0,((224-W6)/4)^0.8/(27-E6))+RANDBETWEEN(0,(V6-2018)),0)),0)
 
 This will give a randomized potential rating based on age and draft class. (2018 is the year where potential starts to slow down ~recommend using 5 years from date)
 
